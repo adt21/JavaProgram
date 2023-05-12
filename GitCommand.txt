@@ -1,0 +1,4 @@
+1. git status -> To check status of the code
+2. git add . -> To add newly created files
+3. git commit -m "message" -> To commit new changes
+4. git push -u origin main -> To push the commited files to the remote origin repository
