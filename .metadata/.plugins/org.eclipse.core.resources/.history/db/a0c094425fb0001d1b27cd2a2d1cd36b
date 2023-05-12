@@ -1,0 +1,25 @@
+package Recursion;
+
+public class FirstIndexOfArray {
+	public static int firstIndex(int a[], int x, int si) {
+		if(a[si] == a.length) { // si = a.length means si = 6 but we know starting index = 0 
+			//so array length from 0 to 9 as array length = 10
+			return -1;
+		}
+		if(a[si] == x) {
+			return si;
+		}
+		int k = firstIndex(a, x, si + 1);
+		return k;
+		
+	}
+
+	public static void main(String[] args) {
+		int a[] = {2,3,6,9,10,12};
+		int x = 10;
+		int si = 0; // si means start index
+		int result = firstIndex(a,x,si);
+		System.out.println(result);
+	}
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
+    <fullyQualifiedTypeName name="java.io.StringBufferInputStream"/>
+    <fullyQualifiedTypeName name="inheritence.Vehicle"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="stacks.StackUsingArray"/>
+    <fullyQualifiedTypeName name="stacks.StackFullException"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.Node"/>
+    <fullyQualifiedTypeName name="linkedList1.Node"/>
+    <fullyQualifiedTypeName name="queues.QueueFullException"/>
+    <fullyQualifiedTypeName name="linkedList.Node"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="queues.QueueUsing2Stacks"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="queues.QueueEmptyException"/>
+    <fullyQualifiedTypeName name="stacks.StackEmptyException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="binaryTrees.BinaryTreeNode"/>
+</qualifiedTypeNameHistroy>

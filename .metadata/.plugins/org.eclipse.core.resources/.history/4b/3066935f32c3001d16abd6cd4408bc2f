@@ -1,0 +1,12 @@
+package String;
+
+public class Practice {
+
+	public static void main (String[] args) {
+		int x = 10,y = 15,z = 5;
+		System.out.println(++x);
+		System.out.println(x++);
+		System.out.println(z++);
+		System.out.println(++x + y + z + x++ - z++);
+	}
+}
