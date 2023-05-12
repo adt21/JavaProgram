@@ -1,3 +1,6 @@
+/**
+ * Created by Aditi Paul
+ */
 package binaryTrees;
 
 import java.util.Scanner;
