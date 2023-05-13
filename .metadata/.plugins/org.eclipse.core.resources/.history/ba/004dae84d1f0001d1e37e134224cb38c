@@ -78,7 +78,7 @@ public class BalancedBinaryTrees {
 			return ans;
 		}
 		ReturnBalancedTree leftOutPut = isBetterBalancedTree(root.left);
-		ReturnBalancedTree rightOutPut = isBetterBalancedTree(root.right);
+		ReturnBalancedTree rightOutPut = isBetterBalancedTree(root.left);
 		boolean isBal = true;
 		int height = 1 + Math.max(leftOutPut.height,rightOutPut.height);
 		if(Math.abs(leftOutPut.height - rightOutPut.height) > 1) {

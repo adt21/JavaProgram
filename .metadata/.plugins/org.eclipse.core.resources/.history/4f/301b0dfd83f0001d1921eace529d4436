@@ -1,6 +1,3 @@
-/**
- * Created by Aditi Paul
- */
 package binaryTrees;
 
 import java.util.Scanner;
@@ -67,36 +64,11 @@ public class BalancedBinaryTrees {
 		boolean isRightBalanced = isBalanced(root.right);
 		return isLeftBalanced && isRightBalanced;
 	}
-	
-	public static ReturnBalancedTree isBetterBalancedTree(BinaryTreeNode<Integer> root) {
-		if(root == null) {
-			int height = 0;
-			boolean isBal = true;
-			ReturnBalancedTree ans = new ReturnBalancedTree();
-			ans.height = height;
-			ans.isBalanced = isBal;
-			return ans;
-		}
-		ReturnBalancedTree leftOutPut = isBetterBalancedTree(root.left);
-		ReturnBalancedTree rightOutPut = isBetterBalancedTree(root.right);
-		boolean isBal = true;
-		int height = 1 + Math.max(leftOutPut.height,rightOutPut.height);
-		if(Math.abs(leftOutPut.height - rightOutPut.height) > 1) {
-			isBal = false;
-		}
-		if(! leftOutPut.isBalanced || ! rightOutPut.isBalanced) {
-			isBal = false;
-		}
-		ReturnBalancedTree ans = new ReturnBalancedTree();
-		ans.height = height;
-		ans.isBalanced = isBal;
-		return ans;
-	}
 
 	public static void main(String[] args) {
 		BinaryTreeNode<Integer> root = takingInput(true,0,true);
 		print(root);
-		System.out.println("Is Balanced: " + isBetterBalancedTree(root).isBalanced);
+		System.out.println("Is Balanced: " + isBalanced(root));
 	}
 
 }
