@@ -15,10 +15,10 @@
     <fullyQualifiedTypeName name="linkedList.Node"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="queues.QueueUsing2Stacks"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="queues.QueueEmptyException"/>
     <fullyQualifiedTypeName name="stacks.StackEmptyException"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="binaryTrees.BinaryTreeNode"/>
 </qualifiedTypeNameHistroy>

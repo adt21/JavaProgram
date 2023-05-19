@@ -1,0 +1,20 @@
+package binaryTrees;
+
+import java.util.Scanner;
+
+public class LevelWiseOrder {
+	
+	public static BinaryTreeNode<Integer> levelWiseTakeInput(){
+		Scanner s = new Scanner(System.in);
+		int rootData = s.nextInt();
+		if(rootData == -1) {
+			return null;
+		}
+		BinaryTreeNode<Integer> root = new BinaryTreeNode<Integer>(rootData);
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}
