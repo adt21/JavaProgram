@@ -1,0 +1,12 @@
+package bst;
+
+public class IsBstReturn {
+	int max;
+	int min;
+	boolean isBst;
+	public IsBstReturn(int max, int min, boolean isBst) {
+		this.max = max;
+		this.min = min;
+		this.isBst = isBst;
+	}
+}
