@@ -1,9 +1,0 @@
-package bst;
-
-public class GoodSolutionIsBst {
-
-	public static void main(String[] args) {
-
-	}
-
-}
