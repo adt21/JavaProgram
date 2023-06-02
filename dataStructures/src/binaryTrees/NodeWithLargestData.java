@@ -47,7 +47,7 @@ public class NodeWithLargestData {
 	
 	public static int largest(BinaryTreeNode<Integer> root) {
 		if(root == null) {
-			return -1;
+			return Integer.MIN_VALUE;
 		}
 		
 		int largestLeft = largest(root.left);

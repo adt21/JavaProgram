@@ -48,8 +48,62 @@ public class BST {
 		size++;
 	}
 	
+	private static int minimum(BstNode<Integer> root) {
+		if(root == null) {
+			return Integer.MAX_VALUE;
+		}
+		
+		int minLeft = minimum(root.left);
+		int minRight = minimum(root.right);
+		
+		return Math.min(root.data, Math.min(minLeft, minRight));
+	}
+	
+	private static BstDeleteReturn deleteDataHelper(BstNode<Integer> root , int x) {
+		if(root == null) {
+			return new BstDeleteReturn(null, false);
+		}
+		if(root.data < x) {
+			BstDeleteReturn outputRight = deleteDataHelper(root.right, x);
+			root.right = outputRight.root;
+			outputRight.root = root;
+			return outputRight;
+		}
+		if(root.data > x) {
+			BstDeleteReturn outputLeft = deleteDataHelper(root.left, x);
+			root.left = outputLeft.root;
+			outputLeft.root = root;
+			return outputLeft;
+		}
+		//if root has 0 children
+		if(root.left == null && root.right == null) {
+			return new BstDeleteReturn(null, true);
+		}
+		//if root has only left children
+		if(root.left != null && root.right == null) {
+			return new BstDeleteReturn(root.left, true);
+		}
+		// if root has only right child
+		if(root.left == null && root.right != null) {
+			return new BstDeleteReturn(root.right, true);
+		}
+		//if root has both two child		
+			int rightMax = minimum(root.right); //find the right max data in the right side
+			root.data = rightMax; // now set that right max value as root 
+			//but still the right max value present at right side, so we need to delete it
+			BstDeleteReturn outputRight = deleteDataHelper(root.right, rightMax);
+			root.right = outputRight.root;
+			return new BstDeleteReturn(root, true);			
+		
+	}
+	
 	public boolean deleteData(int x) {
-		return false;
+		BstDeleteReturn output = deleteDataHelper(root,x);
+		root = output.root;
+		if(output.isDeleted) {
+			size--;
+		}
+		return output.isDeleted;
 	}
 	
 	public int size() {

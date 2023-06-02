@@ -18,6 +18,9 @@ public class BSTuse {
 		System.out.println(b.isPresent(5));
 		
 		b.printTree();
+		b.deleteData(2);
+		System.out.println(b.isPresent(5));
+		b.printTree();
 
 	}
 

@@ -1,0 +1,6 @@
+package bst;
+
+public class BstDeleteReturn {
+	BstNode<Integer> newRoot;
+	boolean isDeleted;
+}

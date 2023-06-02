@@ -23,4 +23,5 @@
     <fullyQualifiedTypeName name="binaryTrees.BinaryTreeNode"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="bst.BstNode"/>
+    <fullyQualifiedTypeName name="bst.BstDeleteReturn"/>
 </qualifiedTypeNameHistroy>
