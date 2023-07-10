@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
     <fullyQualifiedTypeName name="java.io.StringBufferInputStream"/>
     <fullyQualifiedTypeName name="inheritence.Vehicle"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="stacks.StackUsingArray"/>
     <fullyQualifiedTypeName name="stacks.StackFullException"/>
@@ -24,4 +23,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="bst.BstNode"/>
     <fullyQualifiedTypeName name="bst.BstDeleteReturn"/>
+    <fullyQualifiedTypeName name="sem6th.SwapTwoNumber"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
