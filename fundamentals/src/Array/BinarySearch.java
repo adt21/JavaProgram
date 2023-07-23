@@ -5,7 +5,7 @@ public class BinarySearch {
 		int start = 0;
 		int end = arr.length - 1;
 		while(start <= end) {
-			int mid = (start + end)/2;
+			int mid = (start + end)/2; // sometimes (start + end) exceeds integer range that's why it is better to write start + (end - start)/2 for finding mid
 			if(arr[mid] > ele) {
 				end = mid - 1;
 			}

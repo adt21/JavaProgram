@@ -11,8 +11,14 @@ public class InsertSearchDeleteRehashing<K, V> {
 	public InsertSearchDeleteRehashing() { // constructor		
 		buckets = new ArrayList<>();
 		numBuckets = 5;
+		/*
+		 * When you create an array list then no index is there, so when you insert the element into it, you
+		 *  have to insert it into first position(0th index) but you have to insert the element 
+		 * as per your hash code as well as modulo of (hash code % bucket size). So initially 
+		 * you have to make the array list element as null so that you can put your value anywhere
+		 */
 		for(int i = 0; i < numBuckets; i++) {
-			buckets.add(null);
+			buckets.add(null); // making the array list element null
 		}
 	}
 	//insert operation
@@ -21,13 +27,13 @@ public class InsertSearchDeleteRehashing<K, V> {
 		int hc = key.hashCode();
 		/*
 		 * // here h c means hash code and here it collect it from object as we know every class inherit
-		 *  from the object class so it has object's hash code and you can also create your own hashcode 
+		 *  from the object class so it has object's hash code and you can also create your own hash code 
 		 */
 		int index = hc % numBuckets;
 		return index;
 	}
 	
-	//
+	// Rehashing
 	private void reHash() { // this is our internal method not public
 		ArrayList<MapNode<K, V>> temp = buckets; // store the reference of old array list inside new list
 		buckets = new ArrayList<>();
@@ -53,11 +59,17 @@ public class InsertSearchDeleteRehashing<K, V> {
 	public void insert(K key, V value) {
 		int bucketIndex = getBucketIndex(key);
 		MapNode<K, V> head = buckets.get(bucketIndex); // head of the linked list is that particular index
-		//if the node with same key is already present in the linked list, if present just update the value
 		
+		/*
+		 * Now we have to check the linked list if the key is already there or not . if key is there then
+		 *(Like if there is already present "sap",1 and you want to insert "sap",5 then just update the
+		 *value of "sap" from 1 to 5. So,,,
+		 *if the node with same key is already present in the linked list, if present just update the value.
+		 *And if there is no same key,,,that means not present already then you have to make it as a head
+		 *i mean insert it at the front and create connection between new node and it's next node
+		 */
 		while(head != null) {
 			if(head.key.equals(key)) { // here .equals(key) is used as if key is a string then if you write like this (==) then it will compare between two address not the actual value that's why we write here this method such that actual values will compared
-				
 				head.value = value;
 				return;
 			}
@@ -114,7 +126,7 @@ public class InsertSearchDeleteRehashing<K, V> {
 			if(head.key.equals(key)) { 
 				if(prev != null) {
 					prev.next = head.next;
-				}else { //if the 1st node is the removing node which you want to delete
+				}else { //if the 1st node(head node) is the removing node which you want to delete
 					buckets.set(bucketIndex, head.next);
 				}
 			count--;
