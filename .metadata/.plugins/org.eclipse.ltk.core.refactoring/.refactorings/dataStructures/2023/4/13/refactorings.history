@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;LinkedList.CreateALinkedList&apos; to &apos;CreateLinkedListAndMakeConnection&apos;&#x0D;&#x0A;- Original project: &apos;dataStructures&apos;&#x0D;&#x0A;- Original element: &apos;LinkedList.CreateALinkedList&apos;&#x0D;&#x0A;- Renamed element: &apos;LinkedList.CreateLinkedListAndMakeConnection&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CreateALinkedList&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;LinkedList{CreateALinkedList.java[CreateALinkedList" matchStrategy="1" name="CreateLinkedListAndMakeConnection" qualified="false" references="true" similarDeclarations="false" stamp="1680372759060" textual="false" version="1.0"/>
-</session>
