@@ -1,5 +1,5 @@
 package String;
-import java.util.Scanner;
+//import java.util.Scanner;
 public class ReverseEachWord {
 	 public static String reverseEachWord(String str){
          String ans="";

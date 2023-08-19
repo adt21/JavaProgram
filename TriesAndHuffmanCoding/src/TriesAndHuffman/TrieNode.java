@@ -9,7 +9,7 @@ public class TrieNode {
 	public TrieNode(char data) {
 		this.data = data;
 		this.isTerminal = false;
-		this.childrenArr = new TrieNode[26]; // create an array size of 26
+		this.childrenArr = new TrieNode[26]; // create an array size of 26 where the reference of the child will be stored
 		this.childCount = 0;
 	}
 }
