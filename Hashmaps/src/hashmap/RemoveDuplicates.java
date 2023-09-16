@@ -24,7 +24,6 @@ public class RemoveDuplicates {
 		int[] arr = {1,3,2,2,3,1,6,2,5};
 		ArrayList<Integer> output = removeDuplicates(arr);
 		System.out.println("Output is: " + output);
-
 	}
 
 }
