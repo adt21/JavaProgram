@@ -1,30 +1,28 @@
 package Oops;
 
-public class practice {
-	public static int palinArray(int[] a, int n)
-    {
-          for(int i = 0; i < n; i++){
-              if(! palindrome(a[i])){
-                  return 0;
-              }
-          }
-          return 1;
-    }
-    
-    public static boolean palindrome(int n){
-        int temp = n, sum = 0;
-        while(n > 0){
-            int rem = n % 10;
-            sum = sum * 10 + rem;
-            n = n/10;
-        }
-        return temp == sum;
-    }
-	public static void main(String[] args) {
-		int n = 3;
-		int[] arr = {123, 212, 313};
-		int r = palinArray(arr, 3);
-		System.out.println(r);
-	}
+//import java.util.Scanner;
 
+public class practice {
+	public static int check(int n) {
+		int arr[] = new int[1000];
+        int i = 0;
+        while(n > 0){
+            arr[i] = n % 2;
+            n = n / 2;
+            i++;
+        }
+        for(int j = 0; j < i; j++){
+            if(arr[j] == 1){
+            	return (j + 1);
+            }
+        }
+        return 0;
+	}
+	
+	public static void main(String[] args) {
+		int r = check(19);
+		System.out.println(r);
+		
+		
+	}
 }

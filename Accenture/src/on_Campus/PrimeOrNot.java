@@ -9,7 +9,8 @@ public class PrimeOrNot {
 			return false;
 		}
 //		boolean isPrime = true;
-		for(int i = 2; i < n; i++) {
+		for(int i = 2; i < n; i++) { //otherwise you can write i < Math.sqrt(n) Optimized Java Code for Prime Number
+			//Instead of checking till n, we can check till root of n because a larger factor of n must be a multiple of a smaller factor that has been already checked. 
 			if(n % i == 0) {
 				return false;
 			}
