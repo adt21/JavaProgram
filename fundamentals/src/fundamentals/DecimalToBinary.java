@@ -3,7 +3,7 @@ package fundamentals;
 public class DecimalToBinary {
 	
 	public static void convert(int n) {
-		int[] arr = new int[40];
+		int[] arr = new int[1000];
 		int i = 0;
 		while(n > 0) {
 			
@@ -32,3 +32,9 @@ public class DecimalToBinary {
 	}
 
 }
+
+/*
+ * Easy way to do to convert decimal number to binary that is: 
+ * suppose int n = 10;
+ * System.out.println(Integer.toBinaryString(n));
+ */
