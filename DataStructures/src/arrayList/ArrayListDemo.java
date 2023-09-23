@@ -10,6 +10,7 @@ public class ArrayListDemo {
 		arr.add(10);
 		arr.add(20);//inserted 20 after 10
 		arr.add(30);//inserted 30 after 20
+		arr.set(2, 90);
 		System.out.println(arr.get(1));
 		System.out.println(arr.size());
 		arr.add(1, 80); // inserted element at particular index (index-1, element-80), now the ArrayList look like(10,80,20,30)
