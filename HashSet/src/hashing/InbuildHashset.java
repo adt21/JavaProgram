@@ -20,6 +20,9 @@ public class InbuildHashset {
 		//print all HASHSET containing element
 		System.out.println(set);
 		
+		//size
+		System.out.println(set.size());
+		
 		//search element
 		
 		if(set.contains(6)) {

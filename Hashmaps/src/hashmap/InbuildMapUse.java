@@ -11,13 +11,15 @@ public class InbuildMapUse {
 		//insert
 		map.put("abc", 1);
 		map.put("def", 3);
+		System.out.println(map);
 		System.out.println("Value of abc is: " + map.get("abc"));
+		
 		//size
 		System.out.println(map.size());
 		map.put("abc", 4);
 		System.out.println("Value of abc is: " + map.get("abc"));
 		
-		//presence
+		//Search
 		if(map.containsKey("abc")) {
 			System.out.println("Map has abc");
 		}
@@ -47,12 +49,15 @@ public class InbuildMapUse {
 		//iterate
 		Set<String> keys = map.keySet();
 		for(String s: keys) {
-			System.out.println(s);
+			System.out.print(s + " ");
 		}
+		System.out.println();
+		
 		//value presence check
 		if(map.containsValue(4)) {
 			System.out.println("Yes value is present");
 		}
+		
 		
 	}
 

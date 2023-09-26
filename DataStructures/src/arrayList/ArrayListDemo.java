@@ -1,6 +1,7 @@
 package arrayList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListDemo {
 
@@ -8,9 +9,25 @@ public class ArrayListDemo {
 		ArrayList<Integer> arr = new ArrayList<>(); // Syntax of a ArrayList, here used generic in array list
 //if you want to insert element in array list then just do as per below syntax
 		arr.add(10);
+		arr.add(80);
 		arr.add(20);//inserted 20 after 10
 		arr.add(30);//inserted 30 after 20
 		arr.set(2, 90);
+		
+		//sort in reverse order
+		
+		Collections.sort(arr, Collections.reverseOrder());
+		System.out.println(arr);
+		
+		
+		if(! arr.isEmpty()) {
+			System.out.println("List is not empty");
+		}
+		
+		if(arr.contains(20)) {
+			System.out.println("YES");
+		}
+		
 		System.out.println(arr.get(1));
 		System.out.println(arr.size());
 		arr.add(1, 80); // inserted element at particular index (index-1, element-80), now the ArrayList look like(10,80,20,30)
