@@ -38,4 +38,6 @@
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="Oops.Vehicle"/>
+    <fullyQualifiedTypeName name="Oops.Bicycle"/>
 </qualifiedTypeNameHistroy>
