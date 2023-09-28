@@ -44,7 +44,7 @@ public class InbuildHashset {
 		
 		//Iterator, which is present in HASHSET that helps us to traverse the HASHSET and we need to import it
 		//we use Iterator in Hash set as HASHSET does not has any index
-		Iterator i = set.iterator();
+		Iterator<Integer> i = set.iterator();
 		
 		//Iterator has two important function 1) .hasNext() 2) .next()
 		
