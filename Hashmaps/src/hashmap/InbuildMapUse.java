@@ -11,6 +11,7 @@ public class InbuildMapUse {
 		//insert
 		map.put("abc", 1);
 		map.put("def", 3);
+		map.put("egh", 8);
 		System.out.println(map);
 		System.out.println("Value of abc is: " + map.get("abc"));
 		
