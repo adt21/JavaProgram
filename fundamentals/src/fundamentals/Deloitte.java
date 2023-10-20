@@ -1,5 +1,9 @@
 package fundamentals;
 
+/*
+ * This Java program is designed to find and print a number
+ *  that is divisible by both x and y
+ */
 public class Deloitte {
 	public static void main(String[] args) {
 		int x = 4;
