@@ -8,7 +8,6 @@ import java.util.HashSet;
 public class FindDuplicatesInAnArray {
 	
 	public static ArrayList<Integer> duplicates(int arr[], int n){
-		ArrayList<Integer> list = new ArrayList<>();
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> h = new HashSet<>();
         Arrays.sort(arr);
