@@ -20,8 +20,6 @@
     <fullyQualifiedTypeName name="bst.BstDeleteReturn"/>
     <fullyQualifiedTypeName name="sem6th.SwapTwoNumber"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="trees.TreeNode"/>
     <fullyQualifiedTypeName name="hashMapImplementation.MapNode"/>
     <fullyQualifiedTypeName name="priorityQueues.Priority_Queue"/>
@@ -29,7 +27,6 @@
     <fullyQualifiedTypeName name="TriesAndHuffman.TriesImplementation"/>
     <fullyQualifiedTypeName name="TriesAndHuffman.TrieNode"/>
     <fullyQualifiedTypeName name="problems.LLNode"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="Oops.Vehicle"/>
@@ -42,10 +39,13 @@
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="dataStructure.LinkedListNode"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
