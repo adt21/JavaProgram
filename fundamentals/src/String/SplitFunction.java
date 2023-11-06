@@ -9,6 +9,12 @@ public class SplitFunction {
 //		for(String s3 : s.split("\\s", 5)) { // '\\s' = regex, 5 = limit 
 //			System.out.println(s3);
 //		}
+		
+		
+//The string \s is a regular expression that means "whitespace", and you have to
+//write it with two backslash characters ( "\\s" ) when writing it as a string in Java.
+		
+		
 //		for(String s4 : s.split("\\s", 2)) {
 //			System.out.println(s4);
 //		}
