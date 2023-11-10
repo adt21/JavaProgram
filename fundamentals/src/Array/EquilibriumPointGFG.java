@@ -15,7 +15,7 @@ public class EquilibriumPointGFG {
 				right_Sum += arr[k];
 			}
 			if(left_Sum == right_Sum) {
-				return i + 1;
+				return i + 1; // 1-based index
 			}
 		}
 		return -1;
