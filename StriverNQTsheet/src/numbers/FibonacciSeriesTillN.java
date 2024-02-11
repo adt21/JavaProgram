@@ -10,7 +10,7 @@ public class FibonacciSeriesTillN {
 		System.out.println("Enter the range");
 		int count = s.nextInt();
 		
-		for(int i = 0; i <= count; i++) { //print till count from 0 index so total no = 6
+		for(int i = 0; i < count; i++) { //print till count from 0 index so total no = 6
 			System.out.print(n1 + " ");
 			n3 = n1 + n2;
 			n1 = n2;

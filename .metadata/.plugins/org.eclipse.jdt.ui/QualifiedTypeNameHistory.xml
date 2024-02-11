@@ -19,7 +19,6 @@
     <fullyQualifiedTypeName name="bst.BstNode"/>
     <fullyQualifiedTypeName name="bst.BstDeleteReturn"/>
     <fullyQualifiedTypeName name="sem6th.SwapTwoNumber"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="trees.TreeNode"/>
     <fullyQualifiedTypeName name="hashMapImplementation.MapNode"/>
     <fullyQualifiedTypeName name="priorityQueues.Priority_Queue"/>
@@ -48,5 +47,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
