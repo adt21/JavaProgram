@@ -1,5 +1,5 @@
 package String;
-//import java.util.Scanner;
+//time complexity of this code O(n*m)
 public class ReverseEachWord {
 	 public static String reverseEachWord(String str){
          String ans="";
@@ -30,5 +30,6 @@ public class ReverseEachWord {
    public static void main(String args[]) {
        String str="How Are You";
        System.out.println(reverseEachWord(str));
-}  
+   }  
 }
+
