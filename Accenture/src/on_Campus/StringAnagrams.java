@@ -1,5 +1,10 @@
 package on_Campus;
 
+/*
+ * input: string s1 = "silent" and String s2 = "listen". output: True
+ * if you arrange both string you can see both are same
+ */
+
 import java.util.Arrays;
 import java.util.Scanner;
 
